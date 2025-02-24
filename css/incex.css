@@ -1,0 +1,252 @@
+:root {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  padding: 0 0 8px 0;
+  
+}
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+p a {
+  display: inline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+mark,
+pre,
+code {
+  font: inherit;
+}
+
+picture,
+img,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: initial;
+}
+svg {
+  display: block;
+  width: initial;
+  height: initial;
+  fill: currentColor;
+}
+
+form,
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+
+:root{
+
+  --bg-c-input:#dbc5ad;
+  --bg-c-html:#ebdccb;
+
+}
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  margin: 32px 0 16px 0;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-height: 5vh;
+  background-color: var(--bg-c-input);
+  
+}
+
+option, select {
+  font-size: .875rem;
+}
+
+html{
+  background-color: var(--bg-c-html);
+
+}
+.Main {
+ 
+  h1{
+    
+    width: 80%;
+    
+    margin: 1.25rem auto 1.25rem auto;
+  }
+
+  .Wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    .General {
+      width: 50%;
+      padding: 0px 0px 30px;
+      
+
+      .General-form {
+        border: 1px black solid;
+        padding: 10px 20px 0px;
+        width: 100%;
+
+        .General-Datos {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+
+          .Datos {
+            .Datos-select {
+              padding: 8px 8px 8px 16px;
+               white-space: nowrap;
+               width: 100%;
+            }
+          }
+          .Datos--domicilio{
+            grid-column: span 2;
+
+          }
+
+          .Datos--check{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: start;
+            gap: 1rem;
+            margin: .625rem 0 .625rem 0;
+        
+            .Datos-checkbox{
+              width: .9375rem;
+             
+            }
+          }
+          .Datos--empresa{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .Datos-select{
+              width: 50%;
+            }
+          }
+
+          .Datos--ultimo {
+            padding-bottom: 56px;
+          }
+        }
+
+        .Pago{
+          width: 100%;
+          gap: .3125rem;
+          .Pago-metodo{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: start;
+            align-items: center;
+           gap: 1rem;
+            
+            width: 100%;
+            label{
+              font-weight: 500;
+            }
+
+            .radio{
+              width: .9375rem;
+              /* height: .9375rem; */
+            }
+           
+          }
+          .button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin: .625rem 0 .625rem 0;
+          }
+          .Datos--check{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: .625rem 0 .625rem 0;
+        
+            .Datos-checkbox{
+              width: .9375rem;
+            }
+          }
+        }
+        
+        
+      }
+    }
+    .Total{
+      width: 40%;
+      height: fit-content;
+      .Total-info{
+        width: 40%;
+        padding: 16px;
+        /* y */
+        display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-around;
+      position: fixed;
+      border: solid black 1px;
+      border-left: transparent;
+
+     
+      .lineadown {
+        border-bottom: 1px solid lightgray ;
+        margin-bottom: .625rem;
+
+      }
+      .lineaup{
+        border-top:1px solid lightgray ;
+        margin-top: .625rem;;
+
+      }
+    
+
+      .right{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      
+      }
+
+      }
+      .Total-costo{
+        width: 40%;
+
+      }
+    }
+  }
+}

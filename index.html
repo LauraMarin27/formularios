@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/incex.css" />
+  </head>
+  <body>
+    <main class="Main">
+      <h1 class="h1">Detalles de matriculación</h1>
+      <div class="Wrapper">
+        <div class="General">
+          
+          <form action="" class="General-form">
+            <h2 class="General-h2">Datos de alumno</h2>
+            <div class="General-Datos">
+              <div class="Datos">
+                <label for="" class="Datos-label">Nombre</label>
+                <input
+                  type="text"
+                  class="Datos-input"
+                  required
+                  placeholder="Introduce aquí tu nombre"
+                />
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Apellido/s</label>
+                <input
+                  type="text"
+                  class="Datos-input"
+                  required
+                  placeholder="Introduce aquí tus apellidos"
+                />
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Fecha de nacimiento</label>
+                <input type="date" required class="Datos-input" />
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Correo</label>
+                <input
+                  type="email"
+                  required
+                  placeholder="Introduce aquí tu email"
+                  class="Datos-input"
+                />
+              </div>
+              <div class="Datos Datos--ultimo">
+                <label for="" class="Datos-label">Teléfono</label>
+                <input
+                  type="tel"
+                  required
+                  class="Datos-input"
+                  placeholder="Movil con prefijo internacional (+34 612345678)"
+                />
+              </div>
+            </div>
+          </form>
+
+          <form action="" class="General-form">
+            <h2 class="General-h2">Información legal</h2>
+            <div class="General-Datos">
+              <div class="Datos">
+                <label for="" class="Datos-label"
+                  >País de domicilio actual</label
+                >
+                <select name="" id="" class="Datos-select">
+                  <option value="" class="Datos-option" disabled selected>
+                    Selecciona un país
+                  </option>
+                  <option value="" class="Datos-option">España</option>
+                  <option value="" class="Datos-option">Colombia</option>
+                  <option value="" class="Datos-option">Venezuela</option>
+                  <option value="" class="Datos-option">Brasil</option>
+                  <option value="" class="Datos-option">Italia</option>
+                </select>
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Nacionalidad</label>
+                <select name="" id="" class="Datos-select">
+                  <option value="" class="Datos-option" disabled selected>
+                    Selecciona un país
+                  </option>
+                  <option value="" class="Datos-option">España</option>
+                  <option value="" class="Datos-option">Colombia</option>
+                  <option value="" class="Datos-option">Venezuela</option>
+                  <option value="" class="Datos-option">Brasil</option>
+                  <option value="" class="Datos-option">Italia</option>
+                </select>
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Tipo de documento</label>
+                <select name="" id="" class="Datos-select">
+                  <option value="" class="Datos-option" disabled selected>
+                    Selecciona una opción
+                  </option>
+                  <option value="" class="Datos-option">
+                    Documento nacional de identidad español (DNI)
+                  </option>
+                  <option value="" class="Datos-option">N° de Pasaporte</option>
+                  <option value="" class="Datos-option">
+                    N° de Identificación de extranjero (NIE)
+                  </option>
+                  <option value="" class="Datos-option">
+                    Documento de identidad país de nacionalidad
+                  </option>
+                </select>
+              </div>
+
+              <div class="Datos Datos--ultimo">
+                <label for="" class="Datos-label">Número de documento</label>
+                <input
+                  type="text"
+                  class="Datos-input"
+                  required
+                  placeholder="En mayuscula y sin guiones"
+                />
+              </div>
+            </div>
+          </form>
+
+          <form action="" class="General-form">
+            <h2 class="General-h2">Datos de facturación</h2>
+            <div class="General-Datos">
+              <div class="Datos Datos--empresa Datos--domicilio">
+                <label for="" class="Datos-label"
+                  >Factura a nombre de empresa</label
+                >
+                <select name="" id="" class="Datos-select">
+                  <option value="" class="Datos-option">No</option>
+                  <option value="" class="Datos-option">Si</option>
+                </select>
+              </div>
+              <div class="Datos Datos--domicilio">
+                <label for="" class="Datos-label">Domicilio alumno/a</label>
+                <input
+                  type="text"
+                  placeholder="Introduce aquí tu dirección actual"
+                />
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Población</label>
+                <input type="text" required />
+              </div>
+              <div class="Datos">
+                <label for="" class="Datos-label">Provincia</label>
+                <input type="text" required />
+              </div>
+
+              <div class="Datos">
+                <label for="" class="Datos-label">Código postal</label>
+                <input type="text" required />
+              </div>
+
+              <div class="Datos Datos--check Datos--domicilio">
+                <input type="checkbox" class="Datos-checkbox" />
+                <label for="" class="Datos-label"
+                  >Tus datos serán utilizados para poder prestarte adecuadamente
+                  los servicios de formación y para mejorar nuestro servicio.
+                  Consulta más abajo nuestra política de privacidad.</label
+                >
+              </div>
+            </div>
+          </form>
+
+          <form action="" class="General-form">
+            <h2 class="General-h2">Método de pago</h2>
+            <div class="Pago">
+              <ul class="ul">
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio">Pago con tarjeta.</label>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio">Transferencia bancaria.</label>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio">PayPal</label>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio"
+                      >Fracciona el pago en 3 meses (gratis), 6 meses o hasta en
+                      10 mensualidades mediante pagos automáticos con tu
+                      tarjeta.</label
+                    >
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio"
+                      >Fracciona el pago en 3 meses (gratis), 6 meses o hasta en
+                      10 mensualidades mediante recibos automáticos en tu
+                      cuenta.</label
+                    >
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio">Pago por Bizum.</label>
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio"
+                      >Pago seguro con tarjeta de crédito o débito, método
+                      alternativo.</label
+                    >
+                  </div>
+                </li>
+                <li class="li">
+                  <div class="Pago-metodo">
+                    <input type="radio" class="radio" name="radio" />
+                    <label for="radio"
+                      >Fracciona hasta en 19 meses por una cuota fija adicional
+                      cada mes con Aplázame.</label
+                    >
+                  </div>
+                </li>
+              </ul>
+              <p class="p">
+                Tus datos serán utilizados para poder prestarte adecuadamente
+                los servicios de formación y para mejorar nuestro servicio.
+                Consulta la Política de privacidad.
+              </p>
+              <div class="Datos Datos--check Datos--domicilio">
+                <input type="checkbox" class="Datos-checkbox" />
+                <label for="" class="Datos-label"
+                  >He leído y estoy de acuerdo con los Términos y condiciones de
+                  la web
+                </label>
+              </div>
+              <button class="button">Continuar proceso</button>
+            </div>
+          </form>
+        </div>
+        <div class="Total">
+          <div class="Total-info">
+            
+            <div class="div lineadown">Estudio</div>
+            <div class="div right lineadown">Subtotal</div>
+         
+            <section class="section">
+              <h3 class="h3">Máster de Diseño Web</h3>
+              <ul class="ul">
+                <li class="li">
+                  <p class="p">
+                    <strong>Tipo de diploma: </strong>Diploma por CEI: Centro de
+                    Estudios de Innovación (Título Privado)
+                  </p>
+                </li>
+                <li class="li">
+                  <p class="p">
+                    <strong>Convocatoria: </strong>Junio año en curso
+                  </p>
+                </li>
+                <li class="li">
+                  <div class="div"><strong>Ubicación: </strong>Sevilla</div>
+                </li>
+              </ul>
+            </section>
+            <div class="div right">3.200,00€</div>
+
+            <div class="div">Subtotal</div>
+            <div class="div right">3.200,00€</div>
+
+            <div class="div lineaup">Total</div>
+            <div class="div right lineaup">3.200,00€</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
