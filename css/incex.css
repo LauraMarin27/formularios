@@ -10,7 +10,6 @@
 li {
   list-style: none;
   padding: 0 0 8px 0;
-  
 }
 a {
   display: block;
@@ -60,24 +59,33 @@ button {
   color: inherit;
 }
 
-
-:root{
-
-  --bg-c-input:#dbc5ad;
-  --bg-c-html:#ebdccb;
-
+:root {
+  --bg-c-input: #dbc5ad;
+  --bg-c-html: #ebdccb;
+  --font-25-h1: 1.5625rem;
+  --font-22: 1.375rem;
+  --font-20-h2: 1.25rem;
+  --font-14-option: 0.875rem;
+  --font-f-montserrat: "Montserrat", serif;
+  --font-f-sangbleu: "SangBleu Sunrise";
 }
+
 h1 {
-  font-size: 25px;
+  font-size: var(--font-25-h1);
 }
 
 h2 {
-  font-size: 20px;
+  font-size: var(--font-20-h2);
+}
+h3 {
+  font-size: var(--font-22);
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 32px 0 16px 0;
+  font-family: var(--font-f-sangbleu);
 }
 
 label {
@@ -86,25 +94,25 @@ label {
 
 input {
   width: 100%;
-  min-height: 5vh;
+  min-height: 3.25rem;
   background-color: var(--bg-c-input);
-  
 }
 
-option, select {
-  font-size: .875rem;
+option,
+select {
+  font-size: var(--font-14-option);
+  background-color: var(--bg-c-input);
+  min-height: 3.25rem;
 }
 
-html{
+html {
   background-color: var(--bg-c-html);
-
+  font-family: var(--font-f-montserrat);
 }
 .Main {
- 
-  h1{
-    
+  h1 {
     width: 80%;
-    
+
     margin: 1.25rem auto 1.25rem auto;
   }
 
@@ -115,7 +123,6 @@ html{
     .General {
       width: 50%;
       padding: 0px 0px 30px;
-      
 
       .General-form {
         border: 1px black solid;
@@ -128,33 +135,32 @@ html{
           gap: 2rem;
 
           .Datos {
+            gap: 1rem;
             .Datos-select {
               padding: 8px 8px 8px 16px;
-               white-space: nowrap;
-               width: 100%;
+              white-space: nowrap;
+              width: 100%;
             }
           }
-          .Datos--domicilio{
+          .Datos--domicilio {
             grid-column: span 2;
-
           }
 
-          .Datos--check{
+          .Datos--check {
             display: flex;
             flex-flow: row nowrap;
             align-items: start;
             gap: 1rem;
-            margin: .625rem 0 .625rem 0;
-        
-            .Datos-checkbox{
-              width: .9375rem;
-             
+            margin: 0.625rem 0 0.625rem 0;
+
+            .Datos-checkbox {
+              width: 0.9375rem;
             }
           }
-          .Datos--empresa{
+          .Datos--empresa {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            .Datos-select{
+            .Datos-select {
               width: 50%;
             }
           }
@@ -164,89 +170,136 @@ html{
           }
         }
 
-        .Pago{
+        .Pago {
           width: 100%;
-          gap: .3125rem;
-          .Pago-metodo{
+          gap: 0.3125rem;
+          .Pago-metodo {
             display: flex;
             flex-flow: row nowrap;
             justify-content: start;
             align-items: center;
-           gap: 1rem;
-            
+            gap: 1rem;
+
             width: 100%;
-            label{
+            label {
               font-weight: 500;
             }
 
-            .radio{
-              width: .9375rem;
+            .radio {
+              width: 0.9375rem;
               /* height: .9375rem; */
             }
-           
           }
-          .button{
+          .button {
             width: 100%;
             background-color: black;
             color: white;
-            margin: .625rem 0 .625rem 0;
+            margin: 0.625rem 0 0.625rem 0;
+            padding: 0.9375rem 0.9375rem;
           }
-          .Datos--check{
+          .Datos--check {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            justify-content: center;
+            justify-content: start;
             gap: 1rem;
-            margin: .625rem 0 .625rem 0;
-        
-            .Datos-checkbox{
-              width: .9375rem;
+            margin: 0.625rem 0 0.625rem 0;
+
+            .Datos-checkbox {
+              width: 0.9375rem;
             }
           }
         }
-        
-        
       }
     }
-    .Total{
+    .Total {
       width: 40%;
       height: fit-content;
-      .Total-info{
+      .Total-info {
         width: 40%;
         padding: 16px;
         /* y */
         display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-content: space-around;
-      position: fixed;
-      border: solid black 1px;
-      border-left: transparent;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        position: fixed;
+        border: solid black 1px;
+        border-left: transparent;
 
-     
-      .lineadown {
-        border-bottom: 1px solid lightgray ;
-        margin-bottom: .625rem;
+        .lineadown {
+          border-bottom: 1px solid lightgray;
+          margin-bottom: 0.625rem;
+        }
+        .lineaup {
+          border-top: 1px solid lightgray;
+          margin-top: 0.625rem;
+        }
 
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
       }
-      .lineaup{
-        border-top:1px solid lightgray ;
-        margin-top: .625rem;;
-
-      }
-    
-
-      .right{
-        display: flex;
-        align-items: center;
-        justify-content: end;
-      
-      }
-
-      }
-      .Total-costo{
+      .Total-costo {
         width: 40%;
-
       }
     }
   }
+}
+
+/* Responsive */
+/* Pantallas 758px */
+@media (max-width: 758px) {
+  .Main{
+
+  .Wrapper {
+    width: 90%;
+    display: flex ;
+    flex-flow: column-reverse nowrap;
+
+    .General{
+      width: 100%;
+    }
+
+    .Total{
+      width: 100%;
+      
+      .Total-info{
+        position: static;
+        width: 100%;
+        border: solid black 1px;
+      }
+      
+    }
+  
+    
+   
+  }
+}
+}
+
+@media (max-width: 576px){
+
+.Main {
+   .Wrapper {
+    width: 90%;
+       .General {
+           .General-form {
+              .General-Datos {
+                 
+                grid-template-columns: 1fr;
+                .Datos--domicilio {
+                  grid-column: span 1;
+              }
+              .Datos--empresa {
+                grid-template-columns: 1fr;
+            }
+                 
+              }
+          }
+      }
+  }
+}
+
 }
