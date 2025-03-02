@@ -117,65 +117,65 @@ html {
   font-family: var(--font-f-montserrat);
 }
 
-.Main h1 {
+.h1 {
   width: 80%;
   margin: 1.25rem auto 1.25rem auto;
 }
-.Main .Wrapper {
+.Wrapper {
   width: 80%;
   margin: auto;
   display: flex;
 }
-.Main .Wrapper .General {
+.General {
   width: 50%;
   padding: 0px 0px 1.875rem;
 }
-.Main .Wrapper .General .General-form {
+.General-form {
   border: 1px black solid;
   padding: 0.625rem 1.25rem 0px;
   width: 100%;
 }
-.Main .Wrapper .General .General-form .General-datos {
+.General-datos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-.Main .Wrapper .General .General-form .General-datos .General-item {
+.General-item {
   gap: 1rem;
 }
-.Main .Wrapper .General .General-form .General-datos .General-item .General-select {
+.General-select {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   white-space: nowrap;
   width: 100%;
 }
-.Main .Wrapper .General .General-form .General-datos .General--domicilio {
+.General--domicilio {
   grid-column: span 2;
 }
-.Main .Wrapper .General .General-form .General-datos .General--check {
+.General--check {
   display: flex;
   flex-flow: row nowrap;
   align-items: start;
   gap: 1rem;
   margin: 0.625rem 0 0.625rem 0;
 }
-.Main .Wrapper .General .General-form .General-datos .General--check .Datos-checkbox {
+.Datos-checkbox {
   width: 0.9375rem;
 }
-.Main .Wrapper .General .General-form .General-datos .General--empresa {
+.General--empresa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.Main .Wrapper .General .General-form .General-datos .General--empresa .General-select {
+.General--empresa .General-select{
   width: 50%;
 }
-.Main .Wrapper .General .General-form .General-datos .Datos--ultimo {
+.Datos--ultimo {
   padding-bottom: 3.5rem;
 }
-.Main .Wrapper .General .General-form .General-pago {
+.General-pago {
   width: 100%;
   gap: 0.3125rem;
 }
-.Main .Wrapper .General .General-form .General-pago .General-metodo {
+.General-metodo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -183,21 +183,21 @@ html {
   gap: 1rem;
   width: 100%;
 }
-.Main .Wrapper .General .General-form .General-pago .General-metodo label {
+.General-metodo label {
   font-weight: 500;
 }
-.Main .Wrapper .General .General-form .General-pago .General-metodo .General-radio {
+.General-radio {
   width: 0.9375rem;
   /* height: .9375rem; */
 }
-.Main .Wrapper .General .General-form .General-pago .button {
+.button {
   width: 100%;
   background-color: black;
   color: white;
   margin: 0.625rem 0 0.625rem 0;
   padding: 0.9375rem 0.9375rem;
 }
-.Main .Wrapper .General .General-form .General-pago .General--check {
+.General--check {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -205,14 +205,14 @@ html {
   gap: 1rem;
   margin: 0.625rem 0 0.625rem 0;
 }
-.Main .Wrapper .General .General-form .General-pago .General--check .Datos-checkbox {
+.Datos-checkbox {
   width: 0.9375rem;
 }
-.Main .Wrapper .Total {
+.Total {
   width: 40%;
   height: fit-content;
 }
-.Main .Wrapper .Total .Total-info {
+.Total-info {
   width: 40%;
   padding: 1rem;
   /* y */
@@ -223,57 +223,57 @@ html {
   border: solid black 1px;
   border-left: transparent;
 }
-.Main .Wrapper .Total .Total-info .lineadown {
+.lineadown {
   border-bottom: 1px solid lightgray;
   margin-bottom: 0.625rem;
 }
-.Main .Wrapper .Total .Total-info .lineaup {
+.lineaup {
   border-top: 1px solid lightgray;
   margin-top: 0.625rem;
 }
-.Main .Wrapper .Total .Total-info .right {
+.right {
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.Main .Wrapper .Total .Total-costo {
+.Total-costo {
   width: 40%;
 }
 
 /* Responsive */
 /* Pantallas 758px */
 @media (max-width: 758px) {
-  .Main .Wrapper {
+  .Wrapper {
     width: 90%;
     display: flex;
     flex-flow: column-reverse nowrap;
   }
-  .Main .Wrapper .General {
+  .General {
     width: 100%;
   }
-  .Main .Wrapper .Total {
+  .Total {
     width: 100%;
   }
-  .Main .Wrapper .Total .Total-info {
+  .Total-info {
     position: static;
     width: 100%;
     border: solid black 1px;
   }
 }
 @media (max-width: 840px) {
-  .Main .Wrapper {
+  .Wrapper {
     width: 90%;
   }
-  .Main .Wrapper .General .General-form .General-datos {
+  .General-datos {
     grid-template-columns: 1fr;
   }
-  .Main .Wrapper .General .General-form .General-datos .General--domicilio {
+  .General--domicilio {
     grid-column: span 1;
   }
-  .Main .Wrapper .General .General-form .General-datos .General--empresa {
+  .General--empresa {
     grid-template-columns: 1fr;
   }
-  .Main .Wrapper .Total .Total-info {
+  .Total-info {
     width: 45%;
     padding: 1rem;
     display: grid;
@@ -285,7 +285,7 @@ html {
   }
 }
 @media (max-width: 760px) {
-  .Main .Wrapper .Total .Total-info {
+  .Total-info {
     width: 100%;
     padding: 16px;
     display: grid;
@@ -296,4 +296,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+
