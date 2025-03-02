@@ -129,24 +129,24 @@ html {
         padding: 10px 20px 0px;
         width: 100%;
 
-        .General-Datos {
+        .General-datos {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 2rem;
 
-          .Datos {
+          .General-item {
             gap: 1rem;
-            .Datos-select {
+            .General-select {
               padding: 8px 8px 8px 16px;
               white-space: nowrap;
               width: 100%;
             }
           }
-          .Datos--domicilio {
+          .General--domicilio {
             grid-column: span 2;
           }
 
-          .Datos--check {
+          .General--check {
             display: flex;
             flex-flow: row nowrap;
             align-items: start;
@@ -157,10 +157,10 @@ html {
               width: 0.9375rem;
             }
           }
-          .Datos--empresa {
+          .General--empresa {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            .Datos-select {
+            .General-select {
               width: 50%;
             }
           }
@@ -170,10 +170,10 @@ html {
           }
         }
 
-        .Pago {
+        .General-pago {
           width: 100%;
           gap: 0.3125rem;
-          .Pago-metodo {
+          .General-metodo {
             display: flex;
             flex-flow: row nowrap;
             justify-content: start;
@@ -185,7 +185,7 @@ html {
               font-weight: 500;
             }
 
-            .radio {
+            .General-radio {
               width: 0.9375rem;
               /* height: .9375rem; */
             }
@@ -197,7 +197,7 @@ html {
             margin: 0.625rem 0 0.625rem 0;
             padding: 0.9375rem 0.9375rem;
           }
-          .Datos--check {
+          .General--check {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
@@ -279,27 +279,65 @@ html {
 }
 }
 
-@media (max-width: 576px){
+@media (max-width: 840px){
 
-.Main {
-   .Wrapper {
-    width: 90%;
-       .General {
-           .General-form {
-              .General-Datos {
-                 
-                grid-template-columns: 1fr;
-                .Datos--domicilio {
-                  grid-column: span 1;
+  .Main {
+     .Wrapper {
+      width: 90%;
+         .General {
+             .General-form {
+                .General-datos {
+                   
+                  grid-template-columns: 1fr;
+                  .General--domicilio {
+                    grid-column: span 1;
+                }
+                .General--empresa {
+                  grid-template-columns: 1fr;
               }
-              .Datos--empresa {
-                grid-template-columns: 1fr;
+                   
+                }
             }
-                 
-              }
+        }
+        .Total {
+          .Total-info {
+              width: 45%;
+              padding: 16px;
+              display: grid
+;
+              grid-template-columns: repeat(2, 1fr);
+              justify-content: space-around;
+              position: fixed;
+              border: solid black 1px;
+              border-left: transparent;
           }
       }
+    }
   }
+  
+  }
+
+
+
+@media (max-width: 760px){
+  .Main {
+     .Wrapper {
+         .Total {
+            .Total-info {
+                width: 100%;
+                padding: 16px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-around;
+                position: static;
+                border: solid black 1px;
+            
+            }
+        }
+    }
+}
 }
 
-}
+
+  
+  
