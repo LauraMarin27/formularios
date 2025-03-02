@@ -1,0 +1,299 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  padding: 0 0 8px 0;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p a {
+  display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+mark,
+pre,
+code {
+  font: inherit;
+}
+
+picture,
+img,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: initial;
+}
+
+svg {
+  display: block;
+  width: initial;
+  height: initial;
+  fill: currentColor;
+}
+
+form,
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+:root {
+  --bg-c-input: #dbc5ad;
+  --bg-c-html: #ebdccb;
+  --font-25-h1: 1.5625rem;
+  --font-22: 1.375rem;
+  --font-20-h2: 1.25rem;
+  --font-14-option: 0.875rem;
+  --font-f-montserrat: "Montserrat", serif;
+  --font-f-sangbleu: "SangBleu Sunrise";
+}
+
+h1 {
+  font-size: var(--font-25-h1);
+}
+
+h2 {
+  font-size: var(--font-20-h2);
+}
+
+h3 {
+  font-size: var(--font-22);
+}
+
+h1,
+h2,
+h3 {
+  margin: 32px 0 16px 0;
+  font-family: var(--font-f-sangbleu);
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-height: 3.25rem;
+  background-color: var(--bg-c-input);
+}
+
+option,
+select {
+  font-size: var(--font-14-option);
+  background-color: var(--bg-c-input);
+  min-height: 3.25rem;
+}
+
+html {
+  background-color: var(--bg-c-html);
+  font-family: var(--font-f-montserrat);
+}
+
+.Main h1 {
+  width: 80%;
+  margin: 1.25rem auto 1.25rem auto;
+}
+.Main .Wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.Main .Wrapper .General {
+  width: 50%;
+  padding: 0px 0px 30px;
+}
+.Main .Wrapper .General .General-form {
+  border: 1px black solid;
+  padding: 10px 20px 0px;
+  width: 100%;
+}
+.Main .Wrapper .General .General-form .General-datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.Main .Wrapper .General .General-form .General-datos .General-item {
+  gap: 1rem;
+}
+.Main .Wrapper .General .General-form .General-datos .General-item .General-select {
+  padding: 8px 8px 8px 16px;
+  white-space: nowrap;
+  width: 100%;
+}
+.Main .Wrapper .General .General-form .General-datos .General--domicilio {
+  grid-column: span 2;
+}
+.Main .Wrapper .General .General-form .General-datos .General--check {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  gap: 1rem;
+  margin: 0.625rem 0 0.625rem 0;
+}
+.Main .Wrapper .General .General-form .General-datos .General--check .Datos-checkbox {
+  width: 0.9375rem;
+}
+.Main .Wrapper .General .General-form .General-datos .General--empresa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Main .Wrapper .General .General-form .General-datos .General--empresa .General-select {
+  width: 50%;
+}
+.Main .Wrapper .General .General-form .General-datos .Datos--ultimo {
+  padding-bottom: 56px;
+}
+.Main .Wrapper .General .General-form .General-pago {
+  width: 100%;
+  gap: 0.3125rem;
+}
+.Main .Wrapper .General .General-form .General-pago .General-metodo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.Main .Wrapper .General .General-form .General-pago .General-metodo label {
+  font-weight: 500;
+}
+.Main .Wrapper .General .General-form .General-pago .General-metodo .General-radio {
+  width: 0.9375rem;
+  /* height: .9375rem; */
+}
+.Main .Wrapper .General .General-form .General-pago .button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin: 0.625rem 0 0.625rem 0;
+  padding: 0.9375rem 0.9375rem;
+}
+.Main .Wrapper .General .General-form .General-pago .General--check {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin: 0.625rem 0 0.625rem 0;
+}
+.Main .Wrapper .General .General-form .General-pago .General--check .Datos-checkbox {
+  width: 0.9375rem;
+}
+.Main .Wrapper .Total {
+  width: 40%;
+  height: fit-content;
+}
+.Main .Wrapper .Total .Total-info {
+  width: 40%;
+  padding: 16px;
+  /* y */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  position: fixed;
+  border: solid black 1px;
+  border-left: transparent;
+}
+.Main .Wrapper .Total .Total-info .lineadown {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0.625rem;
+}
+.Main .Wrapper .Total .Total-info .lineaup {
+  border-top: 1px solid lightgray;
+  margin-top: 0.625rem;
+}
+.Main .Wrapper .Total .Total-info .right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.Main .Wrapper .Total .Total-costo {
+  width: 40%;
+}
+
+/* Responsive */
+/* Pantallas 758px */
+@media (max-width: 758px) {
+  .Main .Wrapper {
+    width: 90%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+  .Main .Wrapper .General {
+    width: 100%;
+  }
+  .Main .Wrapper .Total {
+    width: 100%;
+  }
+  .Main .Wrapper .Total .Total-info {
+    position: static;
+    width: 100%;
+    border: solid black 1px;
+  }
+}
+@media (max-width: 840px) {
+  .Main .Wrapper {
+    width: 90%;
+  }
+  .Main .Wrapper .General .General-form .General-datos {
+    grid-template-columns: 1fr;
+  }
+  .Main .Wrapper .General .General-form .General-datos .General--domicilio {
+    grid-column: span 1;
+  }
+  .Main .Wrapper .General .General-form .General-datos .General--empresa {
+    grid-template-columns: 1fr;
+  }
+  .Main .Wrapper .Total .Total-info {
+    width: 45%;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    position: fixed;
+    border: solid black 1px;
+    border-left: transparent;
+  }
+}
+@media (max-width: 760px) {
+  .Main .Wrapper .Total .Total-info {
+    width: 100%;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    position: static;
+    border: solid black 1px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
