@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-p a {
+p a label {
   display: inline;
 }
 
@@ -222,6 +222,9 @@ html {
   position: fixed;
   border: solid black 1px;
   border-left: transparent;
+}
+.Total-label{
+  font-weight: 500;
 }
 .lineadown {
   border-bottom: 1px solid lightgray;
