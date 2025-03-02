@@ -84,7 +84,7 @@ h3 {
 h1,
 h2,
 h3 {
-  margin: 32px 0 16px 0;
+  margin: 2rem 0 1rem 0;
   font-family: var(--font-f-sangbleu);
 }
 
@@ -122,11 +122,11 @@ html {
     display: flex;
     .General {
       width: 50%;
-      padding: 0px 0px 30px;
+      padding: 0px 0px 1.875rem;
 
       .General-form {
         border: 1px black solid;
-        padding: 10px 20px 0px;
+        padding: .625rem 1.25rem 0px;
         width: 100%;
 
         .General-datos {
@@ -137,7 +137,7 @@ html {
           .General-item {
             gap: 1rem;
             .General-select {
-              padding: 8px 8px 8px 16px;
+              padding: .5rem .5rem .5rem 1rem;
               white-space: nowrap;
               width: 100%;
             }
@@ -166,7 +166,7 @@ html {
           }
 
           .Datos--ultimo {
-            padding-bottom: 56px;
+            padding-bottom: 3.5rem;
           }
         }
 
@@ -217,7 +217,7 @@ html {
       height: fit-content;
       .Total-info {
         width: 40%;
-        padding: 16px;
+        padding: 1rem;
         /* y */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -302,7 +302,7 @@ html {
         .Total {
           .Total-info {
               width: 45%;
-              padding: 16px;
+              padding: 1rem;
               display: grid
 ;
               grid-template-columns: repeat(2, 1fr);
