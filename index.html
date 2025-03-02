@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Formularios</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,60 +15,68 @@
       <h1 class="h1">Detalles de matriculación</h1>
       <div class="Wrapper">
         <div class="General">
-          <form action="" class="General-form">
+          <form  class="General-form">
             <h2 class="General-h2">Datos de alumno</h2>
             <div class="General-datos">
               <div class="General-item">
-                <label for="" class="General-label">Nombre</label>
+                <label for="nombre" class="General-label">Nombre</label>
                 <input
                   type="text"
                   class="General-input"
+                  name="nombre"
+                  id="nombre"
                   required
                   placeholder="Introduce aquí tu nombre"
-                />
+                >
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Apellido/s</label>
+                <label for="apellidos" class="General-label">Apellido/s</label>
                 <input
                   type="text"
                   class="General-input"
                   required
+                  name="apellidos"
+                  id="apellidos"
                   placeholder="Introduce aquí tus apellidos"
-                />
+                >
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Fecha de nacimiento</label>
-                <input type="date" required class="General-input" />
+                <label for="nacimiento" class="General-label">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" required class="General-input" >
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Correo</label>
+                <label for="email" class="General-label">Correo</label>
                 <input
                   type="email"
                   required
                   placeholder="Introduce aquí tu email"
                   class="General-input"
-                />
+                  name="email"
+                  id="email"
+                >
               </div>
               <div class="General-item Datos--ultimo">
-                <label for="" class="General-label">Teléfono</label>
+                <label for="movil" class="General-label">Teléfono</label>
                 <input
                   type="tel"
                   required
                   class="General-input"
                   placeholder="Movil con prefijo internacional (+34 612345678)"
-                />
+                  name="movil"
+                  id="movil"
+                >
               </div>
             </div>
           </form>
 
-          <form action="" class="General-form">
+          <form class="General-form">
             <h2 class="General-h2">Información legal</h2>
             <div class="General-datos">
               <div class="General-item">
-                <label for="" class="General-label"
+                <label for="pais" class="General-label"
                   >País de domicilio actual</label
                 >
-                <select name="" id="" class="General-select">
+                <select name="pais" id="pais" class="General-select">
                   <option value="" class="General-option" disabled selected>
                     Selecciona un país
                   </option>
@@ -80,8 +88,8 @@
                 </select>
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Nacionalidad</label>
-                <select name="" id="" class="General-select">
+                <label for="nacionalidad" class="General-label">Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad" class="General-select">
                   <option value="" class="General-option" disabled selected>
                     Selecciona un país
                   </option>
@@ -93,8 +101,8 @@
                 </select>
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Tipo de documento</label>
-                <select name="" id="" class="General-select">
+                <label for="documento" class="General-label">Tipo de documento</label>
+                <select name="documento" id="documento" class="General-select">
                   <option value="" class="General-option" disabled selected>
                     Selecciona una opción
                   </option>
@@ -112,53 +120,59 @@
               </div>
 
               <div class="General-item Datos--ultimo">
-                <label for="" class="General-label">Número de documento</label>
+                <label for="numero-documento" class="General-label">Número de documento</label>
                 <input
                   type="text"
                   class="General-input"
                   required
                   placeholder="En mayuscula y sin guiones"
-                />
+                  name="numero-documento"
+                  id="numero-documento"
+                >
               </div>
             </div>
           </form>
 
-          <form action="" class="General-form">
+          <form class="General-form">
             <h2 class="General-h2">Datos de facturación</h2>
             <div class="General-datos">
               <div class="General-item General--empresa General--domicilio">
-                <label for="" class="General-label"
+                <label for="factura" class="General-label"
                   >Factura a nombre de empresa</label
                 >
-                <select name="" id="" class="General-select">
+                <select name="factura" id="factura" class="General-select">
                   <option value="" class="General-option">No</option>
                   <option value="" class="General-option">Si</option>
                 </select>
               </div>
               <div class="General-item General--domicilio">
-                <label for="" class="General-label">Domicilio alumno/a</label>
+                <label for="domicilio" class="General-label">Domicilio alumno/a</label>
                 <input
                   type="text"
                   placeholder="Introduce aquí tu dirección actual"
-                />
+                  class="General-input"
+                  id="domicilio"
+                  name="domicilio"
+
+                >
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Población</label>
-                <input type="text" required />
+                <label for="poblacion" class="General-label">Población</label>
+                <input type="text" name="poblacion" id="poblacion" required class="General-input" >
               </div>
               <div class="General-item">
-                <label for="" class="General-label">Provincia</label>
-                <input type="text" required />
+                <label for="provincia" class="General-label">Provincia</label>
+                <input type="text" required class="General-input" name="provincia" id="provincia" >
               </div>
 
               <div class="General-item">
-                <label for="" class="General-label">Código postal</label>
-                <input type="text" required />
+                <label for="postal" class="General-label">Código postal</label>
+                <input type="text" required class="General-input" name="postal" id="postal" >
               </div>
 
               <div class="General-item General--check General--domicilio">
-                <input type="checkbox" class="Datos-checkbox" />
-                <label for="" class="General-label"
+                <input type="checkbox" class="Datos-checkbox" name="check" id="check" >
+                <label for="check" class="General-label"
                   >Tus datos serán utilizados para poder prestarte adecuadamente
                   los servicios de formación y para mejorar nuestro servicio.
                   Consulta más abajo nuestra política de privacidad.</label
@@ -167,32 +181,32 @@
             </div>
           </form>
 
-          <form action="" class="General-form">
+          <form class="General-form">
             <h2 class="General-h2">Método de pago</h2>
             <div class="General-pago">
               <ul class="General-ul">
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio">General-pago con tarjeta.</label>
+                    <input type="radio" class="General-radio" name="radio" id="radio1" >
+                    <label for="radio1">General-pago con tarjeta.</label>
                   </div>
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio">Transferencia bancaria.</label>
+                    <input type="radio" class="General-radio" name="radio" id="radio2" >
+                    <label for="radio2">Transferencia bancaria.</label>
                   </div>
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio">PayPal</label>
+                    <input type="radio" class="General-radio" name="radio" id="radio3" >
+                    <label for="radio3">PayPal</label>
                   </div>
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio"
+                    <input type="radio" class="General-radio" name="radio" id="radio4" >
+                    <label for="radio4"
                       >Fracciona el pago en 3 meses (gratis), 6 meses o hasta en
                       10 mensualidades mediante pagos automáticos con tu
                       tarjeta.</label
@@ -201,8 +215,8 @@
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio"
+                    <input type="radio" class="General-radio" name="radio" id="radio5" >
+                    <label for="radio5"
                       >Fracciona el pago en 3 meses (gratis), 6 meses o hasta en
                       10 mensualidades mediante recibos automáticos en tu
                       cuenta.</label
@@ -211,14 +225,14 @@
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio">General-pago por Bizum.</label>
+                    <input type="radio" class="General-radio" name="radio" id="radio6" >
+                    <label for="radio6">General-pago por Bizum.</label>
                   </div>
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio"
+                    <input type="radio" class="General-radio" name="radio" id="radio7" >
+                    <label for="radio7"
                       >General-pago seguro con tarjeta de crédito o débito, método
                       alternativo.</label
                     >
@@ -226,8 +240,8 @@
                 </li>
                 <li class="General-li">
                   <div class="General-metodo">
-                    <input type="radio" class="General-radio" name="radio" />
-                    <label for="radio"
+                    <input type="radio" class="General-radio" name="radio" id="radio8" >
+                    <label for="radio8"
                       >Fracciona hasta en 19 meses por una cuota fija adicional
                       cada mes con Aplázame.</label
                     >
@@ -240,8 +254,8 @@
                 Consulta la Política de privacidad.
               </p>
               <div class="General-item General--check General--domicilio">
-                <input type="checkbox" class="Datos-checkbox" />
-                <label for="" class="General-label"
+                <input type="checkbox" class="Datos-checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="General-label"
                   >He leído y estoy de acuerdo con los Términos y condiciones de
                   la web
                 </label>
